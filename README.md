@@ -39,32 +39,38 @@ We use **Multinomial Naive Bayes**, a popular model for text classification task
 ### 📌 Requirements
 
 Install the required libraries:
+numpy, pandas , and scikit learn
 
-```bash
-pip install pandas numpy scikit-learn matplotlib seaborn
+## 📌 Run in Jupyter Notebook
 
+- Clone the repo or download the `.ipynb` file  
+- Open it with **Jupyter Notebook** or **JupyterLab**  
+- Run the cells step by step
 
-Run in Jupyter Notebook
-Clone the repo or download the .ipynb file
+---
 
-Open it with Jupyter Notebook or JupyterLab
+## 📊 Model Evaluation
 
-Run the cells step by step
+- **Accuracy**: ~97% (may vary slightly)
+- **Evaluation Metrics**:
+  - Precision
+  - Recall
+  - F1-Score
+- **Confusion Matrix**: Visualized using Seaborn
 
-📊 Model Evaluation
-Accuracy: ~97% (may vary slightly)
+---
 
-Metrics:
+## 🔍 Try it Yourself
 
-Precision
-
-Recall
-
-F1-Score
-
-Confusion Matrix visualization using Seaborn
-
-🔍 Try it Yourself
 You can test custom messages with:
+
+```python
 predict_spam("You have won $1000! Call now to claim.")
 predict_spam("Are we still meeting at 5 today?")
+
+Accuracy: 0.973
+              precision    recall  f1-score   support
+
+         Ham       0.98      1.00      0.99       965
+        Spam       0.96      0.85      0.90       150
+
