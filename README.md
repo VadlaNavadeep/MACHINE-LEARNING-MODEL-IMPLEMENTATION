@@ -42,3 +42,48 @@ Install the required libraries:
 
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn
+
+📌 Run in Jupyter Notebook
+Clone the repo or download the .ipynb file
+
+Open it with Jupyter Notebook or JupyterLab
+
+Run the cells step by step
+
+📊 Model Evaluation
+Accuracy: ~97% (may vary slightly)
+
+Metrics:
+
+Precision
+
+Recall
+
+F1-Score
+
+Confusion Matrix visualization using Seaborn
+
+🔍 Try it Yourself
+You can test custom messages with:
+
+python
+Copy
+Edit
+predict_spam("You have won $1000! Call now to claim.")
+predict_spam("Are we still meeting at 5 today?")
+📈 Output Example
+markdown
+Copy
+Edit
+Accuracy: 0.973
+              precision    recall  f1-score   support
+
+         Ham       0.98      1.00      0.99       965
+        Spam       0.96      0.85      0.90       150
+📌 Future Improvements
+Use advanced models like SVM or Random Forest
+
+Add more preprocessing (lemmatization, stemming, emoji removal)
+
+Build a Flask/Django web interface
+
